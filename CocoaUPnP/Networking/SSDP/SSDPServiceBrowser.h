@@ -129,4 +129,9 @@ extern const UInt16 SSDPMulticastUDPPort;
  */
 - (void)stopBrowsingForServices;
 
+/**
+ List available network interfaces.
+ */
++ (NSDictionary *)availableNetworkInterfaces;
+
 @end
