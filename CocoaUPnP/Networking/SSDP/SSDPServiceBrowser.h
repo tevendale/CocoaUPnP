@@ -110,7 +110,7 @@ extern const UInt16 SSDPMulticastUDPPort;
 /**
  The current network interface
  */
-@property(readonly, nonatomic) NSString *networkInterface;
+@property(strong, nonatomic) NSString *networkInterface;
 
 /**
  A delegate to inform of browse events.
