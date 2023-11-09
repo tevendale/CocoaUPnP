@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E841AC2AFB8D9A00576904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841AB2AFB8D9A00576904 /* AppDelegate.m */; };
+		17E841AF2AFB8D9A00576904 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841AE2AFB8D9A00576904 /* ViewController.m */; };
+		17E841B12AFB8D9B00576904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E841B02AFB8D9B00576904 /* Assets.xcassets */; };
+		17E841B42AFB8D9B00576904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E841B22AFB8D9B00576904 /* Main.storyboard */; };
+		17E841B62AFB8D9B00576904 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841B52AFB8D9B00576904 /* main.m */; };
+		17E841C22AFB8ED600576904 /* PlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841C12AFB8ED600576904 /* PlaybackManager.m */; };
+		17E841C52AFB9BBC00576904 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841C42AFB9BBC00576904 /* DetailViewController.m */; };
+		17E841C82AFBA50A00576904 /* DetailWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841C72AFBA50A00576904 /* DetailWindowController.m */; };
+		17E841E72AFC09BD00576904 /* PlaybackWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841E62AFC09BD00576904 /* PlaybackWindowController.m */; };
+		17E841EA2AFC09EE00576904 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E841E92AFC09EE00576904 /* PlaybackViewController.m */; };
+		202CBADB3FBA57330762A447 /* libPods-Example-Mac-Storyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A5BBAFE91752E4FE98F1E /* libPods-Example-Mac-Storyboard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17E841A72AFB8D9A00576904 /* Example-Mac-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Mac-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E841AA2AFB8D9A00576904 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17E841AB2AFB8D9A00576904 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17E841AD2AFB8D9A00576904 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17E841AE2AFB8D9A00576904 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17E841B02AFB8D9B00576904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17E841B32AFB8D9B00576904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17E841B52AFB8D9B00576904 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17E841B72AFB8D9B00576904 /* Example_Mac_Storyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example_Mac_Storyboard.entitlements; sourceTree = "<group>"; };
+		17E841C02AFB8ED600576904 /* PlaybackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackManager.h; sourceTree = "<group>"; };
+		17E841C12AFB8ED600576904 /* PlaybackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackManager.m; sourceTree = "<group>"; };
+		17E841C32AFB9BBC00576904 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		17E841C42AFB9BBC00576904 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		17E841C62AFBA50A00576904 /* DetailWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailWindowController.h; sourceTree = "<group>"; };
+		17E841C72AFBA50A00576904 /* DetailWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailWindowController.m; sourceTree = "<group>"; };
+		17E841E52AFC09BD00576904 /* PlaybackWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaybackWindowController.h; sourceTree = "<group>"; };
+		17E841E62AFC09BD00576904 /* PlaybackWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaybackWindowController.m; sourceTree = "<group>"; };
+		17E841E82AFC09EE00576904 /* PlaybackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		17E841E92AFC09EE00576904 /* PlaybackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
+		521A5BBAFE91752E4FE98F1E /* libPods-Example-Mac-Storyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-Mac-Storyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6817BAC572610F23EA87CBA4 /* Pods-Example-Mac-Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Mac-Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-Example-Mac-Storyboard/Pods-Example-Mac-Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		960DAAEC811E852D556AB228 /* Pods-Example-Mac-Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Mac-Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Example-Mac-Storyboard/Pods-Example-Mac-Storyboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17E841A42AFB8D9A00576904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202CBADB3FBA57330762A447 /* libPods-Example-Mac-Storyboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17E8419E2AFB8D9A00576904 = {
+			isa = PBXGroup;
+			children = (
+				17E841A92AFB8D9A00576904 /* Example-Mac-Storyboard */,
+				17E841A82AFB8D9A00576904 /* Products */,
+				B6E675213E6C766D3F7AF811 /* Pods */,
+				91A87D48EC25DE214E094854 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17E841A82AFB8D9A00576904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17E841A72AFB8D9A00576904 /* Example-Mac-Storyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17E841A92AFB8D9A00576904 /* Example-Mac-Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				17E841AA2AFB8D9A00576904 /* AppDelegate.h */,
+				17E841AB2AFB8D9A00576904 /* AppDelegate.m */,
+				17E841AD2AFB8D9A00576904 /* ViewController.h */,
+				17E841AE2AFB8D9A00576904 /* ViewController.m */,
+				17E841B02AFB8D9B00576904 /* Assets.xcassets */,
+				17E841B22AFB8D9B00576904 /* Main.storyboard */,
+				17E841B52AFB8D9B00576904 /* main.m */,
+				17E841C02AFB8ED600576904 /* PlaybackManager.h */,
+				17E841C12AFB8ED600576904 /* PlaybackManager.m */,
+				17E841B72AFB8D9B00576904 /* Example_Mac_Storyboard.entitlements */,
+				17E841C32AFB9BBC00576904 /* DetailViewController.h */,
+				17E841C42AFB9BBC00576904 /* DetailViewController.m */,
+				17E841C62AFBA50A00576904 /* DetailWindowController.h */,
+				17E841C72AFBA50A00576904 /* DetailWindowController.m */,
+				17E841E52AFC09BD00576904 /* PlaybackWindowController.h */,
+				17E841E62AFC09BD00576904 /* PlaybackWindowController.m */,
+				17E841E82AFC09EE00576904 /* PlaybackViewController.h */,
+				17E841E92AFC09EE00576904 /* PlaybackViewController.m */,
+			);
+			path = "Example-Mac-Storyboard";
+			sourceTree = "<group>";
+		};
+		91A87D48EC25DE214E094854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521A5BBAFE91752E4FE98F1E /* libPods-Example-Mac-Storyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E675213E6C766D3F7AF811 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6817BAC572610F23EA87CBA4 /* Pods-Example-Mac-Storyboard.debug.xcconfig */,
+				960DAAEC811E852D556AB228 /* Pods-Example-Mac-Storyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17E841A62AFB8D9A00576904 /* Example-Mac-Storyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E841BA2AFB8D9B00576904 /* Build configuration list for PBXNativeTarget "Example-Mac-Storyboard" */;
+			buildPhases = (
+				578E042ED8F16FBEE676A1C8 /* [CP] Check Pods Manifest.lock */,
+				17E841A32AFB8D9A00576904 /* Sources */,
+				17E841A42AFB8D9A00576904 /* Frameworks */,
+				17E841A52AFB8D9A00576904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-Mac-Storyboard";
+			productName = "Example-Mac-Storyboard";
+			productReference = 17E841A72AFB8D9A00576904 /* Example-Mac-Storyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17E8419F2AFB8D9A00576904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					17E841A62AFB8D9A00576904 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 17E841A22AFB8D9A00576904 /* Build configuration list for PBXProject "Example-Mac-Storyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17E8419E2AFB8D9A00576904;
+			productRefGroup = 17E841A82AFB8D9A00576904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17E841A62AFB8D9A00576904 /* Example-Mac-Storyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17E841A52AFB8D9A00576904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E841B12AFB8D9B00576904 /* Assets.xcassets in Resources */,
+				17E841B42AFB8D9B00576904 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		578E042ED8F16FBEE676A1C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-Mac-Storyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17E841A32AFB8D9A00576904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E841C52AFB9BBC00576904 /* DetailViewController.m in Sources */,
+				17E841EA2AFC09EE00576904 /* PlaybackViewController.m in Sources */,
+				17E841AF2AFB8D9A00576904 /* ViewController.m in Sources */,
+				17E841C82AFBA50A00576904 /* DetailWindowController.m in Sources */,
+				17E841B62AFB8D9B00576904 /* main.m in Sources */,
+				17E841C22AFB8ED600576904 /* PlaybackManager.m in Sources */,
+				17E841AC2AFB8D9A00576904 /* AppDelegate.m in Sources */,
+				17E841E72AFC09BD00576904 /* PlaybackWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17E841B22AFB8D9B00576904 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17E841B32AFB8D9B00576904 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17E841B82AFB8D9B00576904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17E841B92AFB8D9B00576904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17E841BB2AFB8D9B00576904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6817BAC572610F23EA87CBA4 /* Pods-Example-Mac-Storyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Example-Mac-Storyboard/Example_Mac_Storyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.yellowfield.Example-Mac-Storyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		17E841BC2AFB8D9B00576904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960DAAEC811E852D556AB228 /* Pods-Example-Mac-Storyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Example-Mac-Storyboard/Example_Mac_Storyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.yellowfield.Example-Mac-Storyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17E841A22AFB8D9A00576904 /* Build configuration list for PBXProject "Example-Mac-Storyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E841B82AFB8D9B00576904 /* Debug */,
+				17E841B92AFB8D9B00576904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17E841BA2AFB8D9B00576904 /* Build configuration list for PBXNativeTarget "Example-Mac-Storyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E841BB2AFB8D9B00576904 /* Debug */,
+				17E841BC2AFB8D9B00576904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17E8419F2AFB8D9A00576904 /* Project object */;
+}
