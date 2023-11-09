@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1746D1EF2AF9518700CFBA9E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D1ED2AF9518700CFBA9E /* DetailViewController.m */; };
+		1746D1F02AF9518700CFBA9E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1746D1EE2AF9518700CFBA9E /* DetailViewController.xib */; };
+		17AD09352AF841BC002BD0A6 /* DetailWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AD09332AF841BC002BD0A6 /* DetailWindow.m */; };
+		17AD09362AF841BC002BD0A6 /* DetailWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AD09342AF841BC002BD0A6 /* DetailWindow.xib */; };
 		17D43DDE2AF021A400D3E134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D43DDD2AF021A400D3E134 /* AppDelegate.m */; };
 		17D43DE02AF021A500D3E134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D43DDF2AF021A500D3E134 /* Assets.xcassets */; };
 		17D43DE32AF021A500D3E134 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D43DE12AF021A500D3E134 /* MainMenu.xib */; };
 		17D43DE52AF021A500D3E134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D43DE42AF021A500D3E134 /* main.m */; };
 		17D43DEE2AF0300E00D3E134 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D43DED2AF0300E00D3E134 /* MainViewController.m */; };
+		17E0AAFA2AF5878200BF419F /* PlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0AAF92AF5878200BF419F /* PlaybackManager.m */; };
 		4550EAEFFBECE94E16346EC1 /* libPods-Example-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 478233068D029E9692E6A996 /* libPods-Example-Mac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		110DC970DE2DB0A20C736253 /* Pods-Example-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Mac.release.xcconfig"; path = "Target Support Files/Pods-Example-Mac/Pods-Example-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		1746D1EC2AF9518700CFBA9E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1746D1ED2AF9518700CFBA9E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1746D1EE2AF9518700CFBA9E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		17AD09322AF841BC002BD0A6 /* DetailWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailWindow.h; sourceTree = "<group>"; };
+		17AD09332AF841BC002BD0A6 /* DetailWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailWindow.m; sourceTree = "<group>"; };
+		17AD09342AF841BC002BD0A6 /* DetailWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWindow.xib; sourceTree = "<group>"; };
 		17D43DD92AF021A400D3E134 /* Example-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D43DDC2AF021A400D3E134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17D43DDD2AF021A400D3E134 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +37,8 @@
 		17D43DE62AF021A500D3E134 /* Example_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example_Mac.entitlements; sourceTree = "<group>"; };
 		17D43DEC2AF0300E00D3E134 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		17D43DED2AF0300E00D3E134 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		17E0AAF82AF5878200BF419F /* PlaybackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackManager.h; sourceTree = "<group>"; };
+		17E0AAF92AF5878200BF419F /* PlaybackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackManager.m; sourceTree = "<group>"; };
 		478233068D029E9692E6A996 /* libPods-Example-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B7447FC5BC6CE75234A8D1 /* Pods-Example-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-Mac.debug.xcconfig"; path = "Target Support Files/Pods-Example-Mac/Pods-Example-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +84,14 @@
 				17D43DE62AF021A500D3E134 /* Example_Mac.entitlements */,
 				17D43DEC2AF0300E00D3E134 /* MainViewController.h */,
 				17D43DED2AF0300E00D3E134 /* MainViewController.m */,
+				17E0AAF82AF5878200BF419F /* PlaybackManager.h */,
+				17E0AAF92AF5878200BF419F /* PlaybackManager.m */,
+				17AD09322AF841BC002BD0A6 /* DetailWindow.h */,
+				17AD09332AF841BC002BD0A6 /* DetailWindow.m */,
+				17AD09342AF841BC002BD0A6 /* DetailWindow.xib */,
+				1746D1EC2AF9518700CFBA9E /* DetailViewController.h */,
+				1746D1ED2AF9518700CFBA9E /* DetailViewController.m */,
+				1746D1EE2AF9518700CFBA9E /* DetailViewController.xib */,
 			);
 			path = "Example-Mac";
 			sourceTree = "<group>";
@@ -151,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D43DE02AF021A500D3E134 /* Assets.xcassets in Resources */,
+				17AD09362AF841BC002BD0A6 /* DetailWindow.xib in Resources */,
 				17D43DE32AF021A500D3E134 /* MainMenu.xib in Resources */,
+				1746D1F02AF9518700CFBA9E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +212,10 @@
 			files = (
 				17D43DE52AF021A500D3E134 /* main.m in Sources */,
 				17D43DEE2AF0300E00D3E134 /* MainViewController.m in Sources */,
+				17E0AAFA2AF5878200BF419F /* PlaybackManager.m in Sources */,
+				17AD09352AF841BC002BD0A6 /* DetailWindow.m in Sources */,
 				17D43DDE2AF021A400D3E134 /* AppDelegate.m in Sources */,
+				1746D1EF2AF9518700CFBA9E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +360,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -343,6 +370,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.yellowfield.Example-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -361,6 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;

@@ -6,12 +6,16 @@
 //
 
 #import "MainViewController.h"
+#import "PlaybackManager.h"
+#import "DetailWindow.h"
 
 #import <CocoaUPnP/CocoaUPnP.h>
 
 @interface MainViewController () <UPPDiscoveryDelegate, NSTableViewDelegate, NSTableViewDataSource>
 @property (strong, nonatomic) NSTimer *searchTimer;
 @property (strong, nonatomic) NSMutableArray *devices;
+@property (strong, nonatomic) NSString *selectedInterface;
+@property (strong, nonatomic) PlaybackManager *playbackManager;
 
 @end
 
@@ -19,11 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+        
     NSDictionary *interfaces = [SSDPServiceBrowser availableNetworkInterfaces];
     NSArray *interfaceNameArray = [interfaces allKeys];
     [networksPopup removeAllItems];
     
+    // TODO: Set first item as currently selected interface
     for (NSString *interfaceName in interfaceNameArray) {
         NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:interfaceName action:@selector(popupDataTypeChanged:) keyEquivalent:@""];
         [menuItem setEnabled:YES];
@@ -31,8 +36,6 @@
         [menuItem setTarget:self];
         [networksPopup.menu addItem:menuItem];
     }
-    
-    [textField setStringValue:@"Some Text"];
     
     [[UPPDiscovery sharedInstance] addBrowserObserver:self];
     [self setupSearchTimer];
@@ -50,12 +53,18 @@
 
 - (void)timerFired:(NSTimer *)timer
 {
-    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"ssdp:all"];
+    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"ssdp:all" withInterface:_selectedInterface];
 }
 
 - (IBAction)popupDataTypeChanged:(id)sender {
     NSMenuItem *item = (NSMenuItem *)sender;
-    NSLog(@"Popup Changed: %@", item.title);
+    NSString *selectedNetwork = item.title;
+    NSLog(@"Popup Changed: %@", selectedNetwork);
+    _selectedInterface = selectedNetwork;
+    [[UPPDiscovery sharedInstance] forgetAllKnownDevices];
+    [_devices removeAllObjects];
+    [tableView reloadData];
+    [self setupSearchTimer];
 }
 
 
@@ -64,6 +73,7 @@
 
 - (void)discovery:(UPPDiscovery *)discovery didFindDevice:(UPPBasicDevice *)device
 {
+    NSLog(@"In - (void)discovery:(UPPDiscovery *)discovery didFindDevice:(UPPBasicDevice *)device");
     if ([self.devices containsObject:device]) {
         return;
     }
@@ -75,11 +85,11 @@
 
 - (void)discovery:(UPPDiscovery *)discovery didRemoveDevice:(UPPBasicDevice *)device
 {
+    NSLog(@"In - (void)discovery:(UPPDiscovery *)discovery didRemoveDevice:(UPPBasicDevice *)device");
     if (![self.devices containsObject:device]) {
         return;
     }
 
-    NSInteger row = [self.devices indexOfObject:device];
     [self.devices removeObject:device];
     
     [tableView reloadData];
@@ -120,7 +130,26 @@
 
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
     NSLog(@"Selection Changed...");
+    NSLog(@"Selected Row: %ld", tableView.selectedRow);
+    id selectedDevice = [_devices objectAtIndex:tableView.selectedRow];
+    NSLog(@"Device: %@", selectedDevice);
     
+    if ([selectedDevice isKindOfClass:[UPPMediaRendererDevice class]]) {
+        self.playbackManager.renderer = selectedDevice;
+    }
+
+    else if ([selectedDevice isKindOfClass:[UPPMediaServerDevice class]]) {
+        NSString *objectId;
+        
+        DetailWindow *detailWindowController = [[DetailWindow alloc] initWithWindowNibName:@"DetailWindow" device:selectedDevice playbackManager:self.playbackManager objectId:nil];
+
+//        DetailWindow *detailWindowController = [[DetailWindow alloc] initWithWindowNibName:@"DetailWindow"];
+//        detailWindowController.window.title = [selectedDevice friendlyName];
+//        detailWindowController.playbackManager = self.playbackManager;
+//        detailWindowController.device = selectedDevice;
+//        [detailWindowController loadWindow];
+        [detailWindowController showWindow:self];
+     }
 }
 
 @end

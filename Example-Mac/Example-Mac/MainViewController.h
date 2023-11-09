@@ -10,13 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainViewController : NSViewController {
-    
-    IBOutlet NSTextField *textField;
     IBOutlet NSTableView *tableView;
     IBOutlet NSPopUpButton *networksPopup;
-    
-   
-    
 }
 
 @end
