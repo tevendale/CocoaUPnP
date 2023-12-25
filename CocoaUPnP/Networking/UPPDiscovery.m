@@ -39,6 +39,18 @@
     self.unparsedUUIDs = [NSMutableArray array];
 }
 
+- (void)startBrowsingForServices:(NSString *)services withInterface:(NSString *)interface {
+    // If the interface has changed, close the socket so that it's reopened with the new port
+    if (![[self.browser networkInterface] isEqualToString:interface]) {
+        NSLog(@"interface = %@", interface);
+        NSLog(@"networkInterface = %@", [self.browser networkInterface] );
+        NSLog(@"Stopping browsing");
+        [self.browser stopBrowsingForServices];
+    }
+    [self.browser setNetworkInterface:interface];
+    [self startBrowsingForServices:services];
+}
+
 - (void)startBrowsingForServices:(NSString *)services
 {
     [self.browser startBrowsingForServiceTypes:services];

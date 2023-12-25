@@ -6,7 +6,7 @@ PODS:
   - AFNetworking/Reachability (4.0.1)
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
-  - CocoaAsyncSocket (7.6.4)
+  - CocoaAsyncSocket (7.6.5)
   - CocoaUPnP (3.1.0):
     - AFNetworking/NSURLSession (~> 4)
     - AFNetworking/Reachability (~> 4)
@@ -15,44 +15,20 @@ PODS:
     - CocoaAsyncSocket (~> 7)
     - GCDWebServer (~> 3)
     - Ono (~> 2)
-  - Expecta (1.0.6)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
-  - OCMock (3.6)
-  - OHHTTPStubs (6.2.0):
-    - OHHTTPStubs/Default (= 6.2.0)
-  - OHHTTPStubs/Core (6.2.0)
-  - OHHTTPStubs/Default (6.2.0):
-    - OHHTTPStubs/Core
-    - OHHTTPStubs/JSON
-    - OHHTTPStubs/NSURLSession
-    - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (6.2.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (6.2.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (6.2.0)
   - Ono (2.1.2)
-  - Specta (1.0.7)
 
 DEPENDENCIES:
   - CocoaUPnP (from `../CocoaUPnP.podspec`)
-  - Expecta (~> 1)
-  - OCMock (~> 3)
-  - OHHTTPStubs (~> 6)
-  - Specta (~> 1)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - CocoaAsyncSocket
-    - Expecta
     - GCDWebServer
-    - OCMock
-    - OHHTTPStubs
     - Ono
-    - Specta
 
 EXTERNAL SOURCES:
   CocoaUPnP:
@@ -60,15 +36,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
-  CocoaUPnP: f6733371d5d57c3c55c945a1a509469e951656a4
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaUPnP: c8f645afa91397b94200c6134281080c25cda94f
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  OCMock: 5ea90566be239f179ba766fd9fbae5885040b992
-  OHHTTPStubs: 9cde8b5c0b8cc5c0f393b5e20c8efb6e05915c63
   Ono: 26a7c1fc4df13ece7747560a1d80655807a8a000
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 01e197ebb74083e112de84163ade6cdbd5ca8022
+PODFILE CHECKSUM: 8d68e330a510625487aa27c3a3a00cb1f1822c50
 
 COCOAPODS: 1.14.2

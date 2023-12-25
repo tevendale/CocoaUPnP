@@ -57,6 +57,14 @@
 - (void)startBrowsingForServices:(nullable NSString *)services;
 
 /**
+ Start searching for services matching the service type on the specified interface
+
+ @param services The service type to search for. For example, `ssdp:all`
+ */
+
+- (void)startBrowsingForServices:(nullable NSString *)services withInterface:(nullable NSString *)interface;
+
+/**
  Leave SSDP group and shut down discovery service
  */
 - (void)stopBrowsingForServices;

@@ -62,10 +62,10 @@
 
 - (void)timerFired:(NSTimer *)timer
 {
-    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"ssdp:all" withInterface:_selectedInterface];
+//    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"ssdp:all" withInterface:_selectedInterface];
     
     // Look for media servers
-//    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"urn:schemas-upnp-org:service:ContentDirectory:1" withInterface:_selectedInterface];
+    [[UPPDiscovery sharedInstance] startBrowsingForServices:@"urn:schemas-upnp-org:service:ContentDirectory:1" withInterface:_selectedInterface];
 }
 
 - (IBAction)popupDataTypeChanged:(id)sender {
