@@ -61,6 +61,7 @@ struct ContentView: View {
                 
                 TableColumn("Type", value: \.deviceType.wrappedValue)
             }
+            
             Table($items, selection: $itemSelection) {
                 TableColumn("Item", value: \.itemTitle.wrappedValue)
             }
@@ -70,17 +71,8 @@ struct ContentView: View {
             upnpClass.start()
         }
         .onReceive(timer) { _ in
-            UPPDiscovery.sharedInstance().startBrowsing(forServices: "ssdp:all"/*, withInterface: self.selectedInterface*/)
-        }
-        .onChange(of: itemSelection) { newValue in
-            let arrayindex = self.itemSelection
-            let item = items.filter() { arrayindex!.contains($0.id) }
-            print(item[0].itemTitle ?? "")
-            objectId = item[0].objectID
-//            device = item[0] as? UPPMediaServerDevice
-            items = []
-            fetchChildren()
-
+//            UPPDiscovery.sharedInstance().startBrowsing(forServices: "ssdp:all"/*, withInterface: self.selectedInterface*/)
+            UPPDiscovery.sharedInstance().startBrowsing(forServices: "urn:schemas-upnp-org:device:MediaServer:1"/*, withInterface: self.selectedInterface*/)
         }
         .onChange(of: selection) { newValue in
             print("Name changed to \(selection)!")
@@ -93,11 +85,23 @@ struct ContentView: View {
                     }
                     else if selectedDevice!.isKind(of: UPPMediaServerDevice.self) {
                         device = selectedDevice as? UPPMediaServerDevice
+                        items.removeAll()
                         fetchChildren()
                     }
                 }
             }
         }
+        
+        .onChange(of: itemSelection) { newValue in
+            let arrayindex = self.itemSelection
+            let item = items.filter() { arrayindex!.contains($0.id) }
+            print(item[0].itemTitle)
+            objectId = item[0].objectID
+//            device = item[0] as? UPPMediaServerDevice
+            items = []
+            fetchChildren()
+        }
+
     }
     
     func deviceForName(name: String) -> UPPBasicDevice? {
